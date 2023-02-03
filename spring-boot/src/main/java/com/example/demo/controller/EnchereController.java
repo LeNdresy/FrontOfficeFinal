@@ -70,18 +70,18 @@ public class EnchereController {
     }
 
 
-    @GetMapping("clients/{id}/encheres")
-    public ResponseEntity MesEncheres(@PathVariable(value = "id") Long id) throws Exception {
+    // @GetMapping("clients/{id}/encheres")
+    // public ResponseEntity MesEncheres(@PathVariable(value = "id") Long id) throws Exception {
 
-        List<Enchere> liste = (List<Enchere>) enchereRepository.findByIdclient(id);
+    //     List<Enchere> liste = (List<Enchere>) enchereRepository.findByIdclient(id);
         
-        ResponseEntity responseentity = null;
+    //     ResponseEntity responseentity = null;
 
-        Succes succes = new Succes();
-        succes.setData(liste);
+    //     Succes succes = new Succes();
+    //     succes.setData(liste);
 
-        responseentity = new ResponseEntity(succes, HttpStatus.CREATED);
+    //     responseentity = new ResponseEntity(succes, HttpStatus.CREATED);
 
-        return responseentity;
-    }
+    //     return responseentity;
+    // }
 }

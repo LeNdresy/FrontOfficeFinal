@@ -8,4 +8,5 @@ import com.example.demo.model.Etat;
 
 public interface EtatRepository extends JpaRepository<Etat, Long>{
     List<Etat> findAll();
+    Etat findByType(String type);
 }

@@ -69,7 +69,7 @@ public class HistoriqueController {
 
                 HashMap errordata = new HashMap();
                 errordata.put("code", "404");
-                errordata.put("message", "Failed");
+                errordata.put("message", "Solde insuffisant");
 
                 error.setError(errordata);
                 responseentity = new ResponseEntity(error, HttpStatus.CREATED);
