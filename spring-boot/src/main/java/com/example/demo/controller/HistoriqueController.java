@@ -30,7 +30,7 @@ public class HistoriqueController {
     @Autowired
     CompteRepository compteRepository;
 
-    @GetMapping("encheres/{id}/details")
+    @GetMapping("historique/{id}/details")
     public ResponseEntity getDetails(@PathVariable(value = "id") Long id){
 
         List<Historique> liste = (List<Historique>) historiqueRepository.findByIdenchere(id);
